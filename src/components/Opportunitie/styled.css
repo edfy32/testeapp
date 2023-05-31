@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 300px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-details {
+  background-color: #fff;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.text-name {
+  font-size: 18px;
+  font-weight: 800;
+  color: #222222;
+}
+
+.text-location {
+  font-size: 16px;
+  font-weight: 400;
+  color: #222222;
+  display: flex;
+  align-items: center;
+}
+
+.text-price {
+  font-size: 22px;
+  font: normal normal 900 22px/22px Roboto;
+  color: #30B468;
+  text-align: right;
+}
+
+
+.details-button {
+  background-color: #A71919;
+  color: #fff;
+  font-size: 10px;
+  font-size: 300;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.show-more-button-container {
+  margin-top: 10px;
+}
+
+.show-more-button {
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.show-less-button-container {
+  margin-top: 10px;
+}
+
+.show-less-button {
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  height: 2px;
+  background-color: #A71919;
+  margin: 4px;
+}
+
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modal-content img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #666;
+  cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  background-color: #3C3C3C;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.close-button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.close-button span svg {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+
+
+/* css do carrose */
+
+.carousel-root {
+  position: relative;
+}
+
+.carousel .slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider {
+  display: flex;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease;
+}
+
+
+
+
+
+.custom-carousel-next-button {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+  background-color: #3C3C3C;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+}
+
+
+.custom-carousel-prev-button{
+  border: none;
+  cursor: pointer;
+  background-color: #3C3C3C;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+}
+
+.custom-carousel-button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}

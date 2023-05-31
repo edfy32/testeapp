@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+
+.carousel-page {
+    background: transparent linear-gradient(238deg, #2E2E2E 0%, #222222 100%) 0% 0% no-repeat padding-box;
+}
+
+
+.title-page {
+    text-align: left;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+
+.white-line {
+    width: 45px;
+    height: 6px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #fff;
+    margin-right: 20px;
+}
