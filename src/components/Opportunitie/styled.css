@@ -15,17 +15,23 @@
 }
 
 .card {
-  width: 300px;
+  width: 330px;
   border-radius: 20px;
   padding: 10px;
+  position: relative;
 }
 
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+
+.cardimg {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  max-height: 300px;
+}
+
+
+.card:hover {
+  margin-top: -8px;
+  transition: 0.8s;
 }
 
 .card-details {
@@ -33,6 +39,7 @@
   padding: 10px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  cursor: pointer;
 }
 
 .text-name {
@@ -58,14 +65,22 @@
 
 
 .details-button {
-  background-color: #A71919;
+  background-color: #C11414;
   color: #fff;
-  font-size: 10px;
+  font-size: 14px;
   font-size: 300;
   border: none;
-  padding: 10px 20px;
-  border-radius: 14px;
+  width: 150px;
+  height: 48px;
+  border-radius: 50px;
   cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: -60px;
+  right: 20px;
 }
 
 .show-more-button-container {
@@ -104,8 +119,13 @@
   margin: 4px;
 }
 
-
-
+.green-circle-border {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #28B15C;
+  outline: 7px solid rgba(40, 177, 92, 0.23);
+}
 
 .modal {
   position: fixed;
@@ -122,17 +142,20 @@
 .modal-content {
   flex-direction: column;
   align-items: center;
-  padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   position: relative;
+  width: 800px;
+  min-height: 500px;
+}
+
+.modal-text {
+  padding: 16px;
 }
 
 .modal-content img {
-  width: 200px;
-  height: 200px;
+  max-height: 300px;
   object-fit: cover;
-  border-radius: 10px;
   margin-bottom: 20px;
 }
 
@@ -190,7 +213,7 @@
 
 
 
-/* css do carrose */
+/* css do carrosel */
 
 .carousel-root {
   position: relative;
@@ -214,8 +237,6 @@
 
 
 
-
-
 .custom-carousel-next-button {
   position: absolute;
   top: 80%;
@@ -232,7 +253,7 @@
 }
 
 
-.custom-carousel-prev-button{
+.custom-carousel-prev-button {
   border: none;
   cursor: pointer;
   background-color: #3C3C3C;
@@ -251,3 +272,4 @@
   width: 100%;
   height: 100%;
 }
+

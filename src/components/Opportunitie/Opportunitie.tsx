@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { FaMapMarkerAlt, FaAngleDown } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaAngleDown, FaAngleUp } from 'react-icons/fa';
 import { IoMdClose, IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import './styled.css';
 import { Carousel } from 'react-responsive-carousel';
@@ -61,12 +61,15 @@ const Opportunitie: React.FC<CarouselProps> = ({ buildings }) => {
                         onMouseEnter={() => handleMouseEnter(building)}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <img src={building.thumbImage} alt={building.name} style={{ borderTopLeftRadius: '20px', borderTopRightRadius: '20px' }} />
+                        <img src={building.thumbImage} alt={building.name} className="cardimg" />
                         {hoveredBuilding === building && (
                             <button className="details-button" onClick={() => handleViewDetails(building)}>VER DETALHES</button>
                         )}
-                        <div className="card-details">
-                            <h2 className="text-name">{building.name}</h2>
+                        <div className="card-details" onClick={() => handleViewDetails(building)}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                <h2 className="text-name">{building.name}</h2>
+                                <div className="green-circle-border"><span className="green-circle"></span></div>
+                            </div>
                             <p className="text-location">{building.description}</p>
                             <p className="text-price">{building.price}</p>
                             <div className="text-location">
@@ -89,7 +92,7 @@ const Opportunitie: React.FC<CarouselProps> = ({ buildings }) => {
                 <div className="show-less-button-container">
                     <button className="show-less-button" onClick={handleShowLess}>
                         VER MENOS
-                        <span className="location-icon"><FaAngleDown /></span>
+                        <span className="location-icon"><FaAngleUp /></span>
                     </button>
                     <div className="line"></div>
                 </div>
@@ -126,12 +129,14 @@ const Opportunitie: React.FC<CarouselProps> = ({ buildings }) => {
                                 </div>
                             ))}
                         </Carousel>
-                        <h2 className="text-name">{selectedBuilding.name}</h2>
-                        <p className="text-location">{selectedBuilding.description}</p>
-                        <p className="text-price">{selectedBuilding.price}</p>
-                        <p>
-                            <span className="location-icon"><FaMapMarkerAlt /></span> {selectedBuilding.location}
-                        </p>
+                        <div className='modal-text'>
+                            <h2 className="text-name">{selectedBuilding.name}</h2>
+                            <p className="text-location">{selectedBuilding.description}</p>
+                            <p className="text-price">{selectedBuilding.price}</p>
+                            <p>
+                                <span className="location-icon"><FaMapMarkerAlt /></span> {selectedBuilding.location}
+                            </p>
+                        </div>
                     </div>
                 </div>
             )}
