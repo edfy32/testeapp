@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 .carousel {
   display: flex;
@@ -21,13 +20,11 @@
   position: relative;
 }
 
-
 .cardimg {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   max-height: 300px;
 }
-
 
 .card:hover {
   margin-top: -8px;
@@ -56,16 +53,8 @@
   align-items: center;
 }
 
-.text-price {
-  font-size: 22px;
-  font: normal normal 900 22px/22px Roboto;
-  color: #30B468;
-  text-align: right;
-}
-
-
 .details-button {
-  background-color: #C11414;
+  background-color: #c11414;
   color: #fff;
   font-size: 14px;
   font-size: 300;
@@ -115,7 +104,7 @@
 
 .line {
   height: 2px;
-  background-color: #A71919;
+  background-color: #a71919;
   margin: 4px;
 }
 
@@ -123,7 +112,7 @@
   width: 10px;
   height: 10px;
   border-radius: 10px;
-  background-color: #28B15C;
+  background-color: #28b15c;
   outline: 7px solid rgba(40, 177, 92, 0.23);
 }
 
@@ -145,12 +134,13 @@
   background-color: #fff;
   border-radius: 10px;
   position: relative;
-  width: 800px;
+  max-width: 500px;
   min-height: 500px;
+  overflow: hidden;
 }
 
 .modal-text {
-  padding: 16px;
+  padding: 32px 56px 40px 56px;
 }
 
 .modal-content img {
@@ -182,9 +172,9 @@
 
 .close-button {
   position: absolute;
-  top: 30px;
-  right: 25px;
-  background-color: #3C3C3C;
+  top: 15px;
+  right: 15px;
+  background-color: #3c3c3c;
   border: none;
   cursor: pointer;
   display: flex;
@@ -211,8 +201,6 @@
   color: #fff;
 }
 
-
-
 /* css do carrosel */
 
 .carousel-root {
@@ -235,16 +223,17 @@
   transition: transform 0.5s ease;
 }
 
-
+.carousel .slide img {
+  margin: 0;
+}
 
 .custom-carousel-next-button {
+  bottom: 15px;
+  right: 15px;
   position: absolute;
-  top: 80%;
-  transform: translateY(-50%);
   border: none;
   cursor: pointer;
-  background-color: #3C3C3C;
-  cursor: pointer;
+  background-color: #3c3c3c;
   color: #fff;
   font-size: 20px;
   width: 35px;
@@ -252,12 +241,14 @@
   border-radius: 35px;
 }
 
-
 .custom-carousel-prev-button {
+  bottom: 15px;
+  right: 62px;
+  position: absolute;
+  z-index: 1;
   border: none;
   cursor: pointer;
-  background-color: #3C3C3C;
-  cursor: pointer;
+  background-color: #3c3c3c;
   color: #fff;
   font-size: 20px;
   width: 35px;
@@ -273,3 +264,83 @@
   height: 100%;
 }
 
+/* modal-text */
+.container-mt-title-and-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.container-mt-title-and-price p {
+  margin: 0;
+}
+
+.container-mt-title {
+  display: flex;
+  flex-direction: column;
+  font-family: roboto;
+}
+
+.container-mt-title h2 {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.text-price {
+  font-size: 22px;
+  font: normal normal 900 22px/22px Roboto;
+  color: #28b15c !important;
+  text-align: right;
+}
+
+.modal-text .modal-text-locale {
+  display: flex;
+  flex-direction: row;
+  color: #222222;
+  gap: 5px;
+}
+
+.modal-text .modal-text-locale span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-text .modal-text-locale p {
+  margin: 0;
+  font-size: 12px;
+  color: #222222;
+}
+
+.details-container {
+  display: flex;
+  margin-left: 20px;
+}
+
+.details-container ul:last-child {
+  margin-left: 20px;
+}
+
+.details-column {
+  margin-right: 20px;
+  list-style-type: disc;
+}
+
+.details-column li {
+  margin: 0;
+  font-size: 12px;
+  color: #222222;
+}
+
+.container-details {
+  margin-top: 34px;
+}
+
+.text-apartamento {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+  color: #222;
+}
