@@ -17,11 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <Head>
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content={`default-src 'self'; script-src 'self';`}
-        />
-        <script src="./inline-script.js" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline';" />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
