@@ -65,7 +65,7 @@ const Opportunitie: React.FC<CarouselProps> = ({ buildings }) => {
                         {hoveredBuilding === building && (
                             <button className="details-button" onClick={() => handleViewDetails(building)}>VER DETALHES</button>
                         )}
-                        <div className="card-details">
+                        <div className="card-details" onClick={() => handleViewDetails(building)}>
                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                                 <h2 className="text-name">{building.name}</h2>
                                 <div className="green-circle-border"><span className="green-circle"></span></div>
