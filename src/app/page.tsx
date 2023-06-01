@@ -66,7 +66,7 @@ const Home: React.FC = () => {
         'https://node1.eltok.com.br/ars_kammer_api/files/231860f5d9ea011506575f528cda580e-Kammer-Soltero-ExternaNoturna-R2-A-03(2).jpg'
       ],
       description: 'Apartamento 1202',
-      location: 'Meia praia, Itapema SC',
+      location: 'Centro, Itapema SC',
       price: 'R$ 700.000,00'
     },
     {
