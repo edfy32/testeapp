@@ -14,10 +14,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const nonce = 'abc123'; // Defina o valor do atributo nonce aqui
+
   return (
     <html lang="pt">
       <Head>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline';" />
+        <meta httpEquiv="Content-Security-Policy" content={`default-src 'self'; script-src 'self' 'nonce-${nonce}';`} />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
