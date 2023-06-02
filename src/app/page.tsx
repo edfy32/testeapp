@@ -75,6 +75,16 @@ const Home: React.FC = () => {
       description: "Apartamento 603",
       location: "Meia praia, Itapema SC",
       price: "R$ 650.000,00",
+      details: [
+        "02 dormitórios, sendo 01 suíte",
+        "Banheiro social",
+        "Sala",
+        "Cozinha",
+        "Área de serviço",
+        "Sacada com churrasqueira",
+        "01 vaga de garagem privativa",
+        "Área privativa: 70,00m²",
+      ],
     },
     {
       id: 4,
@@ -88,6 +98,16 @@ const Home: React.FC = () => {
       description: "Apartamento 1202",
       location: "Centro, Itapema SC",
       price: "R$ 700.000,00",
+      details: [
+        "02 dormitórios, sendo 01 suíte",
+        "Banheiro social",
+        "Sala",
+        "Cozinha",
+        "Área de serviço",
+        "Sacada com churrasqueira",
+        "01 vaga de garagem privativa",
+        "Área privativa: 70,00m²",
+      ],
     },
     {
       id: 5,
@@ -101,6 +121,16 @@ const Home: React.FC = () => {
       description: "Apartamento 704",
       location: "Meia praia, Itapema SC",
       price: "R$ 640.000,00",
+      details: [
+        "02 dormitórios, sendo 01 suíte",
+        "Banheiro social",
+        "Sala",
+        "Cozinha",
+        "Área de serviço",
+        "Sacada com churrasqueira",
+        "01 vaga de garagem privativa",
+        "Área privativa: 70,00m²",
+      ],
     },
   ];
   return (
