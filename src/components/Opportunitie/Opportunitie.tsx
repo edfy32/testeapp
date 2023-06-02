@@ -101,6 +101,7 @@ const Opportunitie: React.FC<CarouselProps> = ({ buildings }) => {
             )}
             <div
               className="card-details"
+              onClick={() => handleViewDetails(building)}
             >
               <div
                 style={{
