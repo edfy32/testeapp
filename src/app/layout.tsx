@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <Head>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline';" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *" />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
